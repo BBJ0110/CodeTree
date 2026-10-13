@@ -6,8 +6,8 @@ int main() {
     int a, b;
     cin >> a >> b;
 
-    if(a % 2 == 1)
-        a = a + 1;
+    a = a + a % 2;
+    
     for(int i = a; i <= b; i += 2)
         std::cout << i << " ";
     return 0;
